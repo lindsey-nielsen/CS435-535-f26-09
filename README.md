@@ -84,36 +84,6 @@ If you download a local copy, add this entry to the root `.gitignore` file:
 4. Run the notebook cells in order, starting with imports and Spark session creation.
 5. Stop the Spark session when finished with `spark.stop()`.
 
-The initial setup and loading code is:
-
-```python
-# Import Spark tools and plotting libraries
-from pyspark.sql import SparkSession
-from pyspark.sql import functions as F
-import matplotlib.pyplot as plt
-
-# Create or reuse the Spark session
-spark = (
-    SparkSession.builder
-    .appName("African Lion Analysis")
-    .getOrCreate()
-)
-
-# Load the dataset from HDFS
-data_path = "hdfs:///user/lindseynielsen/data/Lion_collar_data_processed.csv"
-
-lion_df = (
-    spark.read
-    .option("header", True)
-    .option("inferSchema", True)
-    .csv(data_path)
-)
-
-# Inspect the schema and sample rows
-lion_df.printSchema()
-lion_df.show(5)
-```
-
 ## Analysis Approach
 
 Data preparation will check inferred types, missing values, category codes, and movement groups. Observed endpoints will be compared with alternatives from the same `step_id_`. For example, the observed distance to a building can be compared with the median distance among that step’s alternatives.
