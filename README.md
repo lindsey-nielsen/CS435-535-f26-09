@@ -1,11 +1,8 @@
 # African Lion Habitat and Movement Analysis
 
 CS 435/535 — Large-Scale Data Analysis
-
-## Student Names
-
-- Lindsey Nielsen
-- Juliet Bremang
+Lindsey Nielsen & Juliet Bremang
+Fall 2026
 
 ## Overview
 
