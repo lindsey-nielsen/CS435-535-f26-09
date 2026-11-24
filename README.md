@@ -24,10 +24,13 @@ Each row describes the endpoint of an observed movement or a simulated alternati
 The `case_` column marks observed endpoints (`TRUE`) and simulated alternatives (`FALSE`). The `step_id_` column groups each observed endpoint with its alternatives. Comparing these locations helps account for the habitat available near the lion during each movement.
 
 ## Research Questions
-
+Juliet
 1. Do lions choose locations closer to human settlements at night, and does this change between wet and dry seasons?
 2. When lions move near settlements, do they choose locations with more forest or shrub cover?
 3. Do lions choose locations closer to water sources during the dry season?
+
+Lindsey
+
 4. Do male and female lions differ in their use of rugged terrain?
 5. Do lions favor different land-cover types during long-distance dispersal?
 6. How does the density of nearby settlements relate to habitat selection when distance to the nearest settlement is similar?
